@@ -25,7 +25,7 @@ const About = () => {
         also Node.js, Express, MongoDB. I am a quick learner and I am always
         looking to expand my skillset.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-10 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
