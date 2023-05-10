@@ -1,11 +1,11 @@
-import { StartWrapper } from "../hoc"
+import { StartWrapper } from "../../hoc"
 
 // eslint-disable-next-line react-refresh/only-export-components
-const Works = () => {
+const Contact = () => {
   return (
-    <div>Works</div>
+    <div>Contact</div>
   )
 }
 
 // eslint-disable-next-line react-refresh/only-export-components
-export default StartWrapper(Works, 'works')
+export default StartWrapper(Contact, 'Contact')
