@@ -5,6 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import Loader from "../Loader";
 
+// eslint-disable-next-line react/prop-types
 function Computers({ isMobile }) {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
