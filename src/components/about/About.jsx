@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../../styles";
 import { services } from "../../constants";
 import { fadeIn, textVariant } from "../../utils/motion";
-import { StartWrapper } from "../../hoc";
+import { SectionWrapper } from "../../hoc";
 import ServiceCard from "./ServiceCard";
 
 // eslint-disable-next-line react-refresh/only-export-components
@@ -35,4 +35,4 @@ const About = () => {
 };
 
 // eslint-disable-next-line react-refresh/only-export-components
-export default StartWrapper(About, "about");
+export default SectionWrapper(About, "about");

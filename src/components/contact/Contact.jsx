@@ -1,4 +1,4 @@
-import { StartWrapper } from "../../hoc"
+import { SectionWrapper } from "../../hoc"
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Contact = () => {
@@ -8,4 +8,4 @@ const Contact = () => {
 }
 
 // eslint-disable-next-line react-refresh/only-export-components
-export default StartWrapper(Contact, 'Contact')
+export default SectionWrapper(Contact, 'contact')

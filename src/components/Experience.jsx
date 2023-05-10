@@ -5,7 +5,7 @@ import 'react-vertical-timeline-component/style.min.css'
 
 import { styles } from '../styles'
 import { experiences } from '../constants'
-import { StartWrapper } from '../hoc'
+import { SectionWrapper } from '../hoc'
 import  { textVariant } from '../utils/motion'
 
 // eslint-disable-next-line react/prop-types, react-refresh/only-export-components
@@ -69,4 +69,4 @@ const Experience = () => {
 }
 
 // eslint-disable-next-line react-refresh/only-export-components
-export default StartWrapper(Experience, "Work")
+export default SectionWrapper(Experience, "work")
