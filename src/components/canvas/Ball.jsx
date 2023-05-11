@@ -8,7 +8,7 @@ import CanvasLoader from '../Loader'
 // eslint-disable-next-line react-refresh/only-export-components
 const Ball = ({ imgUrl }) => {
   
-  const [decal] = useTexture([imgUrl]) 
+  const [decal] = useTexture([imgUrl])
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
