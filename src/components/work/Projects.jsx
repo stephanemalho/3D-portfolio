@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <div className="mt-20 flex flex-wrap gap-7">
+    <div className="mt-20 flex flex-wrap justify-between gap-7">
       {projects.map((project, index) => (
         <ProjectCard key={index} index={index} {...project} />
       ))}
