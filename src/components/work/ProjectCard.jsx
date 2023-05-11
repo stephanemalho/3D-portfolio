@@ -14,7 +14,7 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("left", "spring", index * 1.5, 1)}>
       <div
-        className="w-[360px] bg-tertiary hover:bg-gradient-to-r from-pink-500 to-purple-700 p-5 rounded-2xl sm:w-[360px]"
+        className="w-full bg-tertiary hover:bg-gradient-to-r from-pink-500 to-purple-700 p-5 rounded-2xl sm:w-[360px]"
       >
         <div className="relative w-full h-[230px]">
           <img
