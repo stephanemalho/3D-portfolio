@@ -15,11 +15,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary opacity-95`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to={"https://github.com/stephanemalho"} target="_blank">
-           <img src={github} alt="logo" className="w-9 h-9 object-contain mr-1"  title="github profile"/>
+            <img src={github} alt="logo" className="w-9 h-9 object-contain mr-1 hover:bg-gradient-to-r from-pink-500 to-purple-700 rounded-full"  title="github profile"/>
         </Link>
         <Link
           to="/"
@@ -30,7 +30,7 @@ const Navbar = () => {
           }}
           title="go to the top of the page"
         >
-          <p className="text-white text-[18px] font-bold cursor-pointor flex">Stephane &nbsp;<span className="sm:block hidden">|&nbsp;Malho</span></p>
+          <p className="text-white text-[18px] font-bold cursor-pointor flex">Stephane&nbsp;<span className="sm:block hidden">|&nbsp;Malho</span></p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
