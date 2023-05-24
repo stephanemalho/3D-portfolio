@@ -14,7 +14,6 @@ import {
   git,
   figma,
   docker,
-  meta,
   starbucks,
   tesla,
   shopify,
@@ -27,11 +26,11 @@ import {
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "À propos",
   },
   {
     id: "work",
-    title: "Work",
+    title: "Projets",
   },
   {
     id: "contact",
@@ -41,15 +40,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend React.js",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend React Native",
     icon: mobile,
   },
   {
-    title: "Node Developer",
+    title: "Backend Node",
     icon: backend,
   },
 ];
@@ -111,57 +110,60 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Developpeur Web",
+    company_name: "Openclassrooms",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2020 - Oct 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Création d’une base de donnée MongoDB exposée selon un protocole d’api REST.",
+      "Contrôle d’identification, Cryptage des données sensible.",
+      "Présentation démo devant un jury avec succès (obtention du diplôme)",
+      "Stack technique : React, Redux, Axios, Express, API REST, MongoDB, Git, ",
+      "P7: développer une application React avec MongoDB",
+      "P6: Mise en place d’une API REST sécurisé",
+      "P5: Construire un site e-commerce en javascript",
+      "P4: Optimiser une page web existante (SEO - accessibilité)",
+      "P3: Dynamiser une page web avec des animations CSS",
+      "P2: Transformer une maquette en site web avec HTML et CSS",
+      "P1: Prendre en main la formation Web",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Developpeur Frontend",
+    company_name: "DevPoint",
+    icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jan 2023 - Avril 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Développement des features de présentation",
+      "Création et mise en place d’un design système",
     ],
   },
+  {
+    title: "Developpeur React.js",
+    company_name: "Crazy-e Burger",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "Sept 2022 - Aujourd'hui",
+    points: [
+      "Développement de nouvelles feature avec un focus sur l’UX",
+      "Résolution de bugs via des outils de l’écosystème React",
+      "Création et mise en place d’un design système",
+      "Méthodologie Agile/SCRUM via un système de tickets",
+      "Méthodologie Multi branche suivant le branching system GitHubFlow",
+    ],
+  },
+  {
+    title: "Contactez moi ",
+    company_name: "votre entreprise",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "Demain",
+    points: [
+      "Rendez-vous sur le formulaire de contact en bas de page.",
+    ],
+  }
 ];
 
 const testimonials = [

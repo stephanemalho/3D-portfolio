@@ -14,15 +14,15 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I am <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400  to-violet-700">Stéphane</span>
+            Hey, je suis <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400  to-violet-700">Stéphane</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop web applications and websites with ReactJS, NextJS,{" "}
+            Je développe des applications web avec ReactJS, NextJS,{" "}
             <span className="sm:block hidden">
               {" "}
               NodeJS, ExpressJS, MongoDB,
             </span>{" "}
-            and more.
+            et plus.
           </p>
         </div>
       </div>
