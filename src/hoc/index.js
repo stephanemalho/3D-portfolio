@@ -1,3 +1,3 @@
 import SectionWrapper from "./SectionWrapper";
 
-export { SectionWrapper };
+export { SectionWrapper }; // higher order component
