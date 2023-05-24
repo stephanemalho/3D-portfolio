@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { github } from "../../assets";
 import { fadeIn } from "../../utils/motion";
+import { useState } from "react";
 
 const ProjectCard = ({
   index,
@@ -10,13 +11,30 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  deployed_url,
 }) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleImage = (e) => {
+    e.stopPropagation();
+    setShowModal(true);
+  };
+
+  const handleCloseModal = (e) => {
+    e.stopPropagation();
+    setShowModal(false);
+  };
+
   return (
     <motion.div variants={fadeIn("left", "spring", index * 1.5, 1)}>
       <div
-        className="w-full bg-tertiary hover:bg-gradient-to-r from-pink-500 to-purple-700 p-5 rounded-2xl sm:w-[360px]"
+        className="w-full bg-tertiary hover:bg-gradient-to-r from-pink-500 to-purple-700 p-5 rounded-2xl sm:w-[360px] cursor-pointer"
+        onClick={() => window.open(deployed_url, "_blank")}
       >
-        <div className="relative w-full h-[230px]">
+        <div
+          className="relative w-full h-[250px] cursor-zoom-in"
+          onClick={handleImage}
+        >
           <img
             src={image}
             alt={name}
@@ -47,6 +65,13 @@ const ProjectCard = ({
           ))}
         </div>
       </div>
+      {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-30" onClick={handleCloseModal}>
+          <div className="max-w-2xl mx-auto">
+            <img src={image} alt={name} className="w-full h-auto" />
+          </div>
+        </div>
+      )}
     </motion.div>
   );
 };

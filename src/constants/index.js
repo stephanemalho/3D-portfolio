@@ -14,13 +14,13 @@ import {
   git,
   figma,
   docker,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  idk,
+  crazyburgerImg,
+  openclassrooms,
+  devpoint,
   threejs,
+  crazyburger,
+  promptopia,
 } from "../assets";
 
 export const navLinks = [
@@ -112,7 +112,7 @@ const experiences = [
   {
     title: "Developpeur Web",
     company_name: "Openclassrooms",
-    icon: shopify,
+    icon: openclassrooms,
     iconBg: "#383E56",
     date: "Jan 2020 - Oct 2022",
     points: [
@@ -132,7 +132,7 @@ const experiences = [
   {
     title: "Developpeur Frontend",
     company_name: "DevPoint",
-    icon: tesla,
+    icon: devpoint,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Avril 2023",
     points: [
@@ -143,7 +143,7 @@ const experiences = [
   {
     title: "Developpeur React.js",
     company_name: "Crazy-e Burger",
-    icon: starbucks,
+    icon: crazyburgerImg,
     iconBg: "#383E56",
     date: "Sept 2022 - Aujourd'hui",
     points: [
@@ -157,7 +157,7 @@ const experiences = [
   {
     title: "Contactez moi ",
     company_name: "votre entreprise",
-    icon: starbucks,
+    icon: idk,
     iconBg: "#383E56",
     date: "Demain",
     points: [
@@ -169,94 +169,93 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Collaborer avec Stéphane est un réel plaisir. Non seulement il est un développeur React talentueux, mais il crée une ambiance agréable de travail. Son approche collaborative et son esprit d'équipe sont inestimables.",
+    name: "Victor",
+    designation: "Chef de projet",
+    company: "Crazy-e Burger",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Je suis impressionné par le professionnalisme de Stéphane. Son expertise en développement React a permis de réaliser des interfaces utilisateur exceptionnelles pour mes projets.",
+    name: "Maxime",
+    designation: "Client",
+    company: "DevPoint",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Stéphane est non seulement un développeur React talentueux, mais aussi une personne agréable avec qui travailler. Son approche collaborative et son esprit d'équipe sont vraiment appréciables.",
+    name: "Loïs",
+    designation: "Collègue",
+    company: "Openclassrooms",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Crazy Burger",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Application de restauration rapide en ligne, permettant de commander et de se faire livrer des produits. Le mode administrateur permet de gérer les commandes et les produits dynamiquement.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "Styled-components",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: crazyburger,
+    source_code_link: "https://github.com/stephanemalho/crazy-burger",
+    deployed_url: "https://crazy-burger-1kyyhlad1-stephanemalho.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Promptopia",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Générer des prompts à conserver dans votre profile pour vous aider à écrire des histoires, des poèmes, des chansons, des scripts ou tout ce que vous pouvez imaginer. Une fois généré, copiez le prompt et utilisez le sur l'IA de votre choix!",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Next13",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Talwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: promptopia,
+    source_code_link: "https://github.com/stephanemalho/promptopia",
+    deployed_url: "https://promptopia-livid.vercel.app/",
   },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+  // {
+  //   name: "Trip Guide",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: crazyburger,
+  //   source_code_link: "https://github.com/",
+  //   deployed_url: "https://trip-guide.vercel.app/",
+  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
