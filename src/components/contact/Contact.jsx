@@ -71,43 +71,49 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
-          <label className="flex flex-col">
+          <label className="flex flex-col" htmlFor="name">
             <span className="text-white font-medium mb-4">Votre nom</span>
             <input
-              type="text"
+              required
+              id="name"
               name="name"
+              type="text"
               value={form.name}
               onChange={handleChange}
               placeholder="Quel est votre nom?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium focus:ring-2 focus:ring-${blue[500]} focus:border-${blue[500]}"
             />
           </label>
-          <label className="flex flex-col">
+          <label className="flex flex-col" htmlFor="email">
             <span className="text-white font-medium mb-4">Votre courriel</span>
             <input
+              required
+              id="email"
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
               placeholder="exemple: stephane.malho@gmail.com"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium focus:ring-2 focus:ring-${blue_gradient} focus:border-${blue_gradient}"
             />
           </label>
-          <label className="flex flex-col">
+          <label className="flex flex-col" htmlFor="message">
             <span className="text-white font-medium mb-4">Message</span>
             <textarea
               rows={7}
+              required
+              id="message"
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="Que souhaitez-vous dire?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium focus:ring-2 focus:ring-${blue_gradient} focus:border-${blue}"
             />
           </label>
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary focus:outline-none focus:ring-2 focus:ring-${blue_gradient} focus:border-${blue_gradient} hover:opacity-80 hover:bg-slate-600"
           >
             {loading ? "Envoi..." : "Envoyer"}
           </button>
