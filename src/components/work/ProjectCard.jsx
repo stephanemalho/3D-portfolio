@@ -46,6 +46,7 @@ const ProjectCard = ({
               className="w-10 h-10 black-gradient rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
+                title="Aller sur le github"
                 src={github}
                 alt="github"
                 className="w-full h-full object-contain hover:bg-gradient-to-r from-pink-500 to-purple-500 rounded-full"
@@ -68,7 +69,7 @@ const ProjectCard = ({
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-30" onClick={handleCloseModal}>
           <div className="max-w-2xl mx-auto">
-            <img src={image} alt={name} className="w-full h-auto" />
+            <img src={image} alt={name} className="w-full h-auto"/>
           </div>
         </div>
       )}

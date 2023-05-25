@@ -30,4 +30,4 @@ const Feedbacks = () => {
 };
 
 // eslint-disable-next-line react-refresh/only-export-components
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Feedbacks, "temoignages");

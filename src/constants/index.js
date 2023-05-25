@@ -14,7 +14,6 @@ import {
   git,
   figma,
   docker,
-  idk,
   crazyburgerImg,
   openclassrooms,
   devpoint,
@@ -30,7 +29,7 @@ export const navLinks = [
     title: "À propos",
   },
   {
-    id: "work",
+    id: "works",
     title: "Projets",
   },
   {
@@ -111,6 +110,31 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Developpeur Frontend",
+    company_name: "DevPoint",
+    icon: devpoint,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Avril 2023",
+    points: [
+      "Développement des features de présentation",
+      "Création et mise en place d’un design système",
+    ],
+  },
+  {
+    title: "Developpeur React.js",
+    company_name: "Crazee Burger",
+    icon: crazyburgerImg,
+    iconBg: "#383E56",
+    date: "Sept 2022 - Aujourd'hui",
+    points: [
+      "Développement de nouvelles feature avec un focus sur l’UX",
+      "Résolution de bugs via des outils de l’écosystème React",
+      "Création et mise en place d’un design système",
+      "Méthodologie Agile/SCRUM via un système de tickets",
+      "Méthodologie Multi branche suivant le branching system GitHubFlow",
+    ],
+  },
+  {
     title: "Developpeur Web",
     company_name: "Openclassrooms",
     icon: openclassrooms,
@@ -130,41 +154,6 @@ const experiences = [
       "P1: Prendre en main la formation Web",
     ],
   },
-  {
-    title: "Developpeur Frontend",
-    company_name: "DevPoint",
-    icon: devpoint,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Avril 2023",
-    points: [
-      "Développement des features de présentation",
-      "Création et mise en place d’un design système",
-    ],
-  },
-  {
-    title: "Developpeur React.js",
-    company_name: "Crazy-e Burger",
-    icon: crazyburgerImg,
-    iconBg: "#383E56",
-    date: "Sept 2022 - Aujourd'hui",
-    points: [
-      "Développement de nouvelles feature avec un focus sur l’UX",
-      "Résolution de bugs via des outils de l’écosystème React",
-      "Création et mise en place d’un design système",
-      "Méthodologie Agile/SCRUM via un système de tickets",
-      "Méthodologie Multi branche suivant le branching system GitHubFlow",
-    ],
-  },
-  {
-    title: "Contactez moi ",
-    company_name: "votre entreprise",
-    icon: idk,
-    iconBg: "#383E56",
-    date: "Demain",
-    points: [
-      "Rendez-vous sur le formulaire de contact en bas de page.",
-    ],
-  }
 ];
 
 const testimonials = [
@@ -173,7 +162,7 @@ const testimonials = [
       "Collaborer avec Stéphane est un réel plaisir. Non seulement il est un développeur React talentueux, mais il crée une ambiance agréable de travail. Son approche collaborative et son esprit d'équipe sont inestimables.",
     name: "Victor",
     designation: "Chef de projet",
-    company: "Crazy-e Burger",
+    company: "Crazee Burger",
     image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
@@ -196,7 +185,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Crazy Burger",
+    name: "Crazee Burger",
     description:
       "Application de restauration rapide en ligne, permettant de commander et de se faire livrer des produits. Le mode administrateur permet de gérer les commandes et les produits dynamiquement.",
     tags: [
@@ -216,7 +205,7 @@ const projects = [
   {
     name: "Promptopia",
     description:
-      "Générer des prompts à conserver dans votre profile pour vous aider à écrire des histoires, des poèmes, des chansons, des scripts ou tout ce que vous pouvez imaginer. Une fois généré, copiez le prompt et utilisez le sur l'IA de votre choix!",
+      "Générer des prompts à conserver dans votre profil pour vous aider à écrire des histoires, des poèmes, des chansons, des scripts ou tout ce que vous pouvez imaginer. Une fois généré, copiez le prompt et utilisez le sur l'IA de votre choix!",
     tags: [
       {
         name: "react",

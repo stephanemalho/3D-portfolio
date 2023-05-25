@@ -2,6 +2,7 @@ import backend from "./backend.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import stephane from "./stephane.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -22,7 +23,6 @@ import threejs from "./tech/threejs.svg";
 import devpoint from "./company/devpoint.png";
 import crazyburgerImg from "./company/crazyburger.png";
 import openclassrooms from "./company/openclassrooms.png";
-import idk from "./company/idk.png";
 
 import kaseikiumami from "./kaseikiumami.png";
 import crazyburger from "./crazyburger.png";
@@ -34,6 +34,7 @@ export {
   mobile,
   web,
   github,
+  stephane,
   menu,
   close,
   css,
@@ -55,5 +56,4 @@ export {
   kaseikiumami,
   crazyburger,
   promptopia,
-  idk
 };

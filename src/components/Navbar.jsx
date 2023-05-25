@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import {
-  github,
+  stephane,
   menu,
   close
 } from "../assets";
@@ -12,15 +12,24 @@ import {
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const [toggle, setToggle] = useState(false);
+  const [anchor, setAnchor] = useState("");
+
+  const handleStephaneClick = () => {
+    if (anchor === "#hero") {
+      setAnchor("#temoignages");
+    } else {
+      setAnchor("#hero");
+    }
+  };
 
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary opacity-95`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link to={"https://github.com/stephanemalho"} target="_blank">
-            <img src={github} alt="logo" className="w-9 h-9 object-contain mr-1 hover:bg-gradient-to-r from-pink-500 to-purple-700 rounded-full"  title="github profile"/>
-        </Link>
+        <a href={anchor}>
+            <img src={stephane} alt="stéphane" className="w-9 h-9 object-cover mr-1  hover:bg-gradient-to-r from-pink-500 to-purple-700 rounded-full"  title="photo de profile" onClick={handleStephaneClick}/>
+        </a>
         <Link
           to="/"
           className="flex items-left "
@@ -28,7 +37,7 @@ const Navbar = () => {
             setActive();
             window.scrollTo(0, 0);
           }}
-          title="go to the top of the page"
+          title="Aller en haut de la page"
         >
           <p className="text-white text-[18px] font-bold cursor-pointor flex">Stephane&nbsp;<span className="sm:block hidden">|&nbsp;Malho</span></p>
         </Link>

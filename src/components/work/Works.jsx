@@ -10,9 +10,9 @@ import Projects from "./Projects";
 const Works = ({key}) => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} id="projects@">
         <p className={styles.sectionSubText}>Mes travaux</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <h2 className={styles.sectionHeadText}>Projets.</h2>
       </motion.div>
       <div className="flex w-full">
         <motion.p
@@ -28,4 +28,4 @@ const Works = ({key}) => {
 };
 
 // eslint-disable-next-line react-refresh/only-export-components
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "works");
