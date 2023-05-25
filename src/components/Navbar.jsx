@@ -27,9 +27,9 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary opacity-95`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <a href={anchor}>
-            <img src={stephane} alt="stéphane" className="w-9 h-9 object-cover mr-1  hover:bg-gradient-to-r from-pink-500 to-purple-700 rounded-full"  title="photo de profile" onClick={handleStephaneClick}/>
-        </a>
+      <a href={anchor} className="flex items-center justify-center w-11 h-11 mr-1 hover:bg-gradient-to-r from-pink-500 to-purple-700 rounded-full">
+  <img src={stephane} alt="stéphane" className="w-9 h-9 object-cover rounded-full " title="photo de profile" onClick={handleStephaneClick} />
+</a>
         <Link
           to="/"
           className="flex items-left "
@@ -39,7 +39,7 @@ const Navbar = () => {
           }}
           title="Aller en haut de la page"
         >
-          <p className="text-white text-[18px] font-bold cursor-pointor flex">Stephane&nbsp;<span className="sm:block hidden">|&nbsp;Malho</span></p>
+          <p className="text-white text-[18px] font-bold cursor-pointor flex">stephane&nbsp;<span className="sm:block hidden">&nbsp;Malho</span></p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
