@@ -19,6 +19,7 @@ import {
   openclassrooms,
   devpoint,
   threejs,
+  kaseikiumami,
   crazyburger,
   promptopia,
 } from "../assets";
@@ -234,28 +235,28 @@ const projects = [
     source_code_link: "https://github.com/stephanemalho/promptopia",
     deployed_url: "https://promptopia-livid.vercel.app/",
   },
-  // {
-  //   name: "Trip Guide",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: crazyburger,
-  //   source_code_link: "https://github.com/",
-  //   deployed_url: "https://trip-guide.vercel.app/",
-  // },
+  {
+    name: "Kaseiki Umami",
+    description:
+      "une intégration captivante d'une page web statique et responsive pour un restaurant de sushi à la thématique japonaise. L'ajout d'animations AOS procure une expérience visuelle immersive.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "aos",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: kaseikiumami,
+    source_code_link: "https://github.com/stephanemalho/KaisekiUmami",
+    deployed_url: "https://kaiseki-umami.vercel.app/",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

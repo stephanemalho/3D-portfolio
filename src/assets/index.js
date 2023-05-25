@@ -24,6 +24,7 @@ import crazyburgerImg from "./company/crazyburger.png";
 import openclassrooms from "./company/openclassrooms.png";
 import idk from "./company/idk.png";
 
+import kaseikiumami from "./kaseikiumami.png";
 import crazyburger from "./crazyburger.png";
 import promptopia from "./promptopia.png";
 
@@ -51,6 +52,7 @@ export {
   devpoint,
   crazyburgerImg,
   openclassrooms,
+  kaseikiumami,
   crazyburger,
   promptopia,
   idk
