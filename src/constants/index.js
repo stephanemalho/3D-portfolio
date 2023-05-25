@@ -13,7 +13,6 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   crazyburgerImg,
   openclassrooms,
   devpoint,
@@ -101,10 +100,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 

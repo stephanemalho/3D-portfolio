@@ -12,7 +12,7 @@ import {
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const [toggle, setToggle] = useState(false);
-  const [anchor, setAnchor] = useState("");
+  const [anchor, setAnchor] = useState("#hero");
 
   const handleStephaneClick = () => {
     if (anchor === "#hero") {
