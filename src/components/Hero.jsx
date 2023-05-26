@@ -14,7 +14,7 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hey, je suis{" "}
+            Hello, je suis{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400  to-violet-700">
               Stéphane
             </span>

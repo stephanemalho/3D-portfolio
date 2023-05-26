@@ -20,6 +20,8 @@ import {
   kaseikiumami,
   crazyburger,
   promptopia,
+  copy,
+  copied,
 } from "../assets";
 
 export const navLinks = [
@@ -36,6 +38,31 @@ export const navLinks = [
     title: "Contact",
   },
 ];
+
+const socialLinks = [
+  { 
+    id:"1",
+    name: "Email",
+    title: "stephane.malho@gmail.com",
+    copy,
+    copied,
+  },
+  {
+    id:"2",
+    name: "Téléphone",
+    title: "tel:+336 77 58 58 56",
+    copy,
+    copied,
+  },
+  {
+    id:"3",
+    name: "Github",
+    title: "https://github.stephane.malho.fr",
+    copy,
+    copied,
+  },
+];
+
 
 const services = [
   {
@@ -243,4 +270,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, socialLinks };

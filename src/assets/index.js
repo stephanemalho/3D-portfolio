@@ -28,6 +28,9 @@ import kaseikiumami from "./kaseikiumami.png";
 import crazyburger from "./crazyburger.png";
 import promptopia from "./promptopia.png";
 
+import copy from "./copy/copy.svg";
+import copied from "./copy/tick.svg";
+
 
 export {
   backend,
@@ -56,4 +59,6 @@ export {
   kaseikiumami,
   crazyburger,
   promptopia,
+  copy,
+  copied,
 };
