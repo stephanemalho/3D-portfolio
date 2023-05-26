@@ -239,7 +239,7 @@ const projects = [
     ],
     image: kaseikiumami,
     source_code_link: "https://github.com/stephanemalho/KaisekiUmami",
-    deployed_url: "https://kaiseki-umami.vercel.app/",
+    deployed_url: "https://kaiseki-umami-stephanemalho.vercel.app/",
   },
 ];
 
