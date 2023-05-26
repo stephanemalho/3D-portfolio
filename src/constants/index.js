@@ -50,7 +50,7 @@ const socialLinks = [
   {
     id:"2",
     name: "Téléphone",
-    title: "tel:+336 77 58 58 56",
+    title: "+336 77 58 58 56",
     copy,
     copied,
   },
