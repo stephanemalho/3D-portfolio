@@ -18,7 +18,7 @@ const Navbar = () => {
     setTimeout(() => setCopied(""), 3000);
   };
 
-  const handleStephaneClick = () => {
+  const handleClickName = () => {
     if (anchor === "#hero") {
       setAnchor("#temoignages");
     } else {
@@ -40,7 +40,7 @@ const Navbar = () => {
             alt="stéphane"
             className="w-9 h-9 object-cover rounded-full "
             title="photo de profile"
-            onClick={handleStephaneClick}
+            onClick={handleClickName}
           />
         </a>
         <div className="flex justify-center items-center">
@@ -61,17 +61,18 @@ const Navbar = () => {
                   key={link.id}
                   className={`${
                     activeLink === link.title ? "text-white" : "text-secondary"
-                  } flex flex-row hover:text-white transition duration-300 ease-in-out cursor-pointer text-[18px] font-meduim cursor-pointor`}
+                  } flex flex-row hover:text-white transition duration-300 ease-in-out text-[18px] font-meduim`}
                   onClick={() => {
                     setToggleLink(!toggle);
                     setActiveLink(link.title);
                   }}
                 >
                   <a href={`#${link.id}`}>
-                    <span className="text-white">{link.name}</span>
+                    <span className="text-white cursor-text">{link.name}</span>
                     {": "}
-                    {link.title}{" "}
-                    <img
+                    <span className="cursor-text">{link.title}{" "}</span>
+                    <img 
+                      className="w-[20px] h-[20px] object-contain cursor-pointer"
                       onClick={() => handleCopy(link)}
                       src={copied === link.title ? link.copied : link.copy}
                       alt={link.name}
