@@ -12,6 +12,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   deployed_url,
+  tabIndex,
 }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -28,12 +29,14 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("left", "spring", index * 1.5, 1)}>
       <div
+        tabIndex={tabIndex}
         className="w-full bg-tertiary hover:bg-gradient-to-r from-pink-500 to-purple-700 p-5 rounded-2xl sm:w-[360px] cursor-pointer"
         onClick={() => window.open(deployed_url, "_blank")}
       >
         <div
           className="relative w-full h-[250px] cursor-zoom-in"
           onClick={handleImage}
+          tabIndex={tabIndex}
         >
           <img
             src={image}
@@ -42,6 +45,7 @@ const ProjectCard = ({
           />
           <div className=" absolute inset-0 flex justify-end card-img_hover m-3">
             <div
+              tabIndex={tabIndex}
               onClick={() => window.open(source_code_link, "_blank")}
               className="w-10 h-10 black-gradient rounded-full flex justify-center items-center cursor-pointer"
             >

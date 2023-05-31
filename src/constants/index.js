@@ -132,22 +132,12 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Developpeur Frontend",
-    company_name: "DevPoint",
-    icon: devpoint,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Avril 2023",
-    points: [
-      "Développement des features de présentation",
-      "Création et mise en place d’un design système",
-    ],
-  },
-  {
     title: "Developpeur React.js",
     company_name: "Crazee Burger",
     icon: crazyburgerImg,
     iconBg: "#383E56",
     date: "Sept 2022 - Aujourd'hui",
+    tabIndex: 0,
     points: [
       "Développement de nouvelles feature avec un focus sur l’UX",
       "Résolution de bugs via des outils de l’écosystème React",
@@ -157,11 +147,24 @@ const experiences = [
     ],
   },
   {
+    title: "Developpeur Frontend",
+    company_name: "DevPoint",
+    icon: devpoint,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Avril 2023",
+    tabIndex: 0,
+    points: [
+      "Développement des features de présentation",
+      "Création et mise en place d’un design système",
+    ],
+  },
+  {
     title: "Developpeur Web",
     company_name: "Openclassrooms",
     icon: openclassrooms,
     iconBg: "#383E56",
     date: "Jan 2020 - Oct 2022",
+    tabIndex: 0,
     points: [
       "Création d’une base de donnée MongoDB exposée selon un protocole d’api REST.",
       "Contrôle d’identification, Cryptage des données sensible.",
@@ -220,6 +223,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
+    tabIndex: 0,
     image: crazyburger,
     source_code_link: "https://github.com/stephanemalho/crazy-burger",
     deployed_url: "https://crazy-burger-1kyyhlad1-stephanemalho.vercel.app/",
@@ -242,6 +246,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
+    tabIndex: 0,
     image: promptopia,
     source_code_link: "https://github.com/stephanemalho/promptopia",
     deployed_url: "https://promptopia-livid.vercel.app/",
@@ -264,6 +269,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
+    tabIndex: 0,
     image: kaseikiumami,
     source_code_link: "https://github.com/stephanemalho/KaisekiUmami",
     deployed_url: "https://kaiseki-umami-stephanemalho.vercel.app/",

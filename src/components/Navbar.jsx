@@ -43,10 +43,16 @@ const Navbar = () => {
             onClick={handleClickName}
           />
         </a>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center cursor-pointer">
           <p
-            className="text-white text-[18px] font-bold cursor-pointor flex"
+            className="text-white text-[18px] font-bold flex"
             onClick={() => setToggleLink(!toggleLink)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                setToggleLink(!toggleLink);
+              }
+            }}
+            tabIndex={0}
           >
             Stéphane&nbsp;<span className="sm:block hidden">&nbsp;Malho</span>
           </p>
@@ -66,16 +72,28 @@ const Navbar = () => {
                     setToggleLink(!toggle);
                     setActiveLink(link.title);
                   }}
+                  onKeyDown={() => {
+                    setActiveLink(link.title);
+                  }}
                 >
                   <a href={`#${link.id}`}>
                     <span className="text-white cursor-text">{link.name}</span>
                     {": "}
-                    <span className="cursor-text">{link.title}{" "}</span>
-                    <img 
+                    <span className="cursor-text">{link.title} </span>
+                    <img
+                      title={`Copier ${link.title}`}
                       className="w-[20px] h-[20px] object-contain cursor-pointer"
                       onClick={() => handleCopy(link)}
                       src={copied === link.title ? link.copied : link.copy}
                       alt={link.name}
+                      // if setToggleLink is toggle, then add tabindex to the img to run handleCopy
+                      tabIndex={toggleLink ? 0 : -1}
+                      // si j'appui sur entrée, alors je lance handleCopy
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                          handleCopy(link);
+                        }
+                      }}
                     />{" "}
                   </a>
                 </li>
