@@ -4,6 +4,9 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 
+// Not used component for now
+// waiting for a better solution to fix error buffer NaN returned in console
+
 const Stars = (props) => {
   const ref = useRef();
   const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
@@ -35,7 +38,6 @@ const StarsCanvas = () => {
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
-
         <Preload all />
       </Canvas>
     </div>
