@@ -90,14 +90,16 @@ const Navbar = () => {
                     {": "}
                     <span className="cursor-text">{link.title} </span>
                     {link.title === "CV au format PDF" ? (
-                      <div
-                        // href={curriculum}
-
-                        onClick={() => handleCopy(link)}
-                      >
+                      <div onClick={() => handleCopy(link)}>
                         <AiOutlineDownload
                           title={`Télécharger ${link.title}`}
                           className="w-[20px] h-[20px] object-contain cursor-pointer"
+                          tabIndex={toggleLink ? 0 : -1}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter") {
+                              handleCopy(link);
+                            }
+                          }}
                         />
                       </div>
                     ) : (
