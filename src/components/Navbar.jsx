@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { AiOutlineDownload } from "react-icons/ai";
 
 import { styles } from "../styles";
 import { navLinks, socialLinks } from "../constants";
-import { stephane, menu, close } from "../assets";
+import { stephane, menu, close, curriculum } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -13,9 +14,17 @@ const Navbar = () => {
   const [copied, setCopied] = useState("");
 
   const handleCopy = (link) => {
-    setCopied(link.title);
-    navigator.clipboard.writeText(link.title);
-    setTimeout(() => setCopied(""), 3000);
+    if (link.name === "Curriculum Vitae") {
+      // Télécharger le fichier PDF
+      const downloadLink = document.createElement("a");
+      downloadLink.href = curriculum;
+      downloadLink.download = "curriculum.pdf";
+      downloadLink.click();
+    } else {
+      setCopied(link.title);
+      navigator.clipboard.writeText(link.title);
+      setTimeout(() => setCopied(""), 3000);
+    }
   };
 
   const handleClickName = () => {
@@ -80,21 +89,32 @@ const Navbar = () => {
                     <span className="text-white cursor-text">{link.name}</span>
                     {": "}
                     <span className="cursor-text">{link.title} </span>
-                    <img
-                      title={`Copier ${link.title}`}
-                      className="w-[20px] h-[20px] object-contain cursor-pointer"
-                      onClick={() => handleCopy(link)}
-                      src={copied === link.title ? link.copied : link.copy}
-                      alt={link.name}
-                      // if setToggleLink is toggle, then add tabindex to the img to run handleCopy
-                      tabIndex={toggleLink ? 0 : -1}
-                      // si j'appui sur entrée, alors je lance handleCopy
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter") {
-                          handleCopy(link);
-                        }
-                      }}
-                    />{" "}
+                    {link.title === "CV au format PDF" ? (
+                      <div
+                        // href={curriculum}
+
+                        onClick={() => handleCopy(link)}
+                      >
+                        <AiOutlineDownload
+                          title={`Télécharger ${link.title}`}
+                          className="w-[20px] h-[20px] object-contain cursor-pointer"
+                        />
+                      </div>
+                    ) : (
+                      <img
+                        title={`Copier ${link.title}`}
+                        className="w-[20px] h-[20px] object-contain cursor-pointer"
+                        onClick={() => handleCopy(link)}
+                        src={copied === link.title ? link.copied : link.copy}
+                        alt={link.name}
+                        tabIndex={toggleLink ? 0 : -1}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            handleCopy(link);
+                          }
+                        }}
+                      />
+                    )}
                   </a>
                 </li>
               ))}

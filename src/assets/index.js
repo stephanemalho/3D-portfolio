@@ -31,6 +31,8 @@ import promptopia from "./promptopia.png";
 import copy from "./copy/copy.svg";
 import copied from "./copy/tick.svg";
 
+import curriculum from "./curriculum/curriculum.pdf";
+
 
 export {
   backend,
@@ -61,4 +63,5 @@ export {
   promptopia,
   copy,
   copied,
+  curriculum,
 };

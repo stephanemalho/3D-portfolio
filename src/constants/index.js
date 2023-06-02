@@ -61,6 +61,13 @@ const socialLinks = [
     copy,
     copied,
   },
+  {
+    id:"4",
+    name: "Curriculum Vitae",
+    title: "CV au format PDF",
+    copy,
+    copied,
+  },
 ];
 
 

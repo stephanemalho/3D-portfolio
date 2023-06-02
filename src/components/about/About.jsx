@@ -19,7 +19,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
       >
         Je suis un développeur frontend avec une passion pour la création de sites web réactifs et fonctionnels. J&apos;ai de l&apos;expérience dans la création de
-        sites Web et applications Web utilisant JavaScript, React, Typescript et
+        sites et applications Web utilisant JavaScript, React, Typescript et
         également Node.js, Express, MongoDB. J&apos;apprends vite et je suis ouvert à élargir mes compétences.
       </motion.p>
       <div className="mt-10 flex flex-wrap gap-10">
