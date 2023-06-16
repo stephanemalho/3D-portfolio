@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -14,25 +13,26 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  crazyburgerImg,
+  openclassrooms,
+  devpoint,
   threejs,
+  kaseikiumami,
+  crazyburger,
+  carsearch,
+  promptopia,
+  copy,
+  copied,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "À propos",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "works",
+    title: "Projets",
   },
   {
     id: "contact",
@@ -40,22 +40,50 @@ export const navLinks = [
   },
 ];
 
+const socialLinks = [
+  { 
+    id:"1",
+    name: "Email",
+    title: "stephane.malho@gmail.com",
+    copy,
+    copied,
+  },
+  {
+    id:"2",
+    name: "Téléphone",
+    title: "+336 77 58 58 56",
+    copy,
+    copied,
+  },
+  {
+    id:"3",
+    name: "Github",
+    title: "https://github.stephane.malho.fr",
+    copy,
+    copied,
+  },
+  {
+    id:"4",
+    name: "Curriculum Vitae",
+    title: "CV au format PDF",
+    copy,
+    copied,
+  },
+];
+
+
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend React.js",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend React Native",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Backend Node",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -108,63 +136,55 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Developpeur React.js",
+    company_name: "Crazee Burger",
+    icon: crazyburgerImg,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Sept 2022 - Aujourd'hui",
+    tabIndex: 0,
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Développement de nouvelles feature avec un focus sur l’UX",
+      "Résolution de bugs via des outils de l’écosystème React",
+      "Création et mise en place d’un design système",
+      "Méthodologie Agile/SCRUM via un système de tickets",
+      "Méthodologie Multi branche suivant le branching system GitHubFlow",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Developpeur Frontend",
+    company_name: "DevPoint",
+    icon: devpoint,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2023 - Avril 2023",
+    tabIndex: 0,
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Développement des features de présentation",
+      "Création et mise en place d’un design système",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Developpeur Web",
+    company_name: "Openclassrooms",
+    icon: openclassrooms,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2020 - Oct 2022",
+    tabIndex: 0,
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Création d’une base de donnée MongoDB exposée selon un protocole d’api REST.",
+      "Contrôle d’identification, Cryptage des données sensible.",
+      "Présentation démo devant un jury avec succès (obtention du diplôme)",
+      "Stack technique : React, Redux, Axios, Express, API REST, MongoDB, Git, ",
+      "P7: développer une application React avec MongoDB",
+      "P6: Mise en place d’une API REST sécurisé",
+      "P5: Construire un site e-commerce en javascript",
+      "P4: Optimiser une page web existante (SEO - accessibilité)",
+      "P3: Dynamiser une page web avec des animations CSS",
+      "P2: Transformer une maquette en site web avec HTML et CSS",
+      "P1: Prendre en main la formation Web",
     ],
   },
 ];
@@ -172,94 +192,120 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Collaborer avec Stéphane est un réel plaisir. Non seulement il est un développeur React talentueux, mais il crée une ambiance agréable de travail. Son approche collaborative et son esprit d'équipe sont inestimables.",
+    name: "Victor",
+    designation: "Chef de projet",
+    company: "Crazee Burger",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Je suis impressionné par le professionnalisme de Stéphane. Son expertise en développement React a permis de réaliser des interfaces utilisateur exceptionnelles pour mes projets.",
+    name: "Maxime",
+    designation: "Client",
+    company: "DevPoint",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Stéphane est non seulement un développeur React talentueux, mais aussi une personne agréable avec qui travailler. Son approche collaborative et son esprit d'équipe sont vraiment appréciables.",
+    name: "Loïs",
+    designation: "Collègue",
+    company: "Openclassrooms",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Crazee Burger",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Application de restauration rapide en ligne, permettant de commander et de se faire livrer des produits. Le mode administrateur permet de gérer les commandes et les produits dynamiquement.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "Styled-components",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    tabIndex: 0,
+    image: crazyburger,
+    source_code_link: "https://github.com/stephanemalho/crazy-burger",
+    deployed_url: "https://crazy-burger-stephanemalho.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "CarSearch",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Application de recherche de véhicules d'occasion. L'application permet de rechercher des véhicules par marque, modèle, année,carburant. Les données sont récupérées via une API REST.",
+    tags: [
+      {
+        name: "Typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Next13",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HeadlessUI",
+        color: "pink-text-gradient",
+      },
+    ],
+    tabIndex: 0,
+    image: carsearch,
+    source_code_link: "https://github.com/stephanemalho/car-search",
+    deployed_url: "https://car-search-j189rl6c0-stephanemalho.vercel.app/",
+  },
+  {
+    name: "Promptopia",
+    description:
+      "Générer des prompts à conserver dans votre profil pour vous aider à écrire des histoires, des poèmes, des chansons, des scripts ou tout ce que vous pouvez imaginer. Une fois généré, copiez le prompt et utilisez le sur l'IA de votre choix!",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Next13",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Talwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    tabIndex: 0,
+    image: promptopia,
+    source_code_link: "https://github.com/stephanemalho/promptopia",
+    deployed_url: "https://promptopia-livid.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Kaseiki Umami",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "une intégration captivante d'une page web statique et responsive pour un restaurant de sushi à la thématique japonaise. L'ajout d'animations AOS procure une expérience visuelle immersive.",
     tags: [
       {
-        name: "nextjs",
+        name: "html",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "aos",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    tabIndex: 0,
+    image: kaseikiumami,
+    source_code_link: "https://github.com/stephanemalho/KaisekiUmami",
+    deployed_url: "https://kaiseki-umami-stephanemalho.vercel.app/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, socialLinks };
+

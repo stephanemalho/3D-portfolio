@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import ComputersCanvas from "./canvas/Computers";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto" id="hero">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -15,19 +14,21 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I am <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400  to-violet-700">Stéphane</span>
+            Hello, je suis{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400  to-violet-700">
+              Stéphane
+            </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop web applications and websites with ReactJS, NextJS,{" "}
+            Je développe des applications web avec ReactJS, NextJS,{" "}
             <span className="sm:block hidden">
               {" "}
               NodeJS, ExpressJS, MongoDB,
             </span>{" "}
-            and more.
+            et plus.
           </p>
         </div>
       </div>
-      <ComputersCanvas />
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center ">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

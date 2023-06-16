@@ -39,6 +39,7 @@ const ExperienceCard = ({ experience }) => (
     <ul className='mt-5 list-disc ml-5 space-y-2'>
       {experience.points.map((point, index) => (
         <li
+          tabIndex={experience.tabIndex}
           key={`experience-point-${index}`}
           className='text-white-100 text-[14px] pl-1 tracking-wider'
         >
@@ -54,8 +55,8 @@ const Experience = () => {
   return (
     <>
     <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <p className={styles.sectionSubText}>CE QUE J&apos;AI FAIT JUSQU&apos;À PRÉSENT</p>
+        <h2 className={styles.sectionHeadText}>L&apos;expérience professionnelle.</h2>
     </motion.div>
     <div className="mt-20 flex flex-col">
       <VerticalTimeline>

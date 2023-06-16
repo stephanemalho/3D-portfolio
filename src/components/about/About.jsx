@@ -1,4 +1,3 @@
-// import React from 'react'
 import { motion } from "framer-motion";
 
 import { styles } from "../../styles";
@@ -13,17 +12,15 @@ const About = () => {
     <>
       <motion.div variant={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Aperçu.</h2>
       </motion.div>
       <motion.p
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        I am a frontend web developer with a passion for creating beautiful,
-        responsive, and functional websites. I have experience in building
-        websites and web applications using JavaScript, React, Typescript and
-        also Node.js, Express, MongoDB. I am a quick learner and I am always
-        looking to expand my skillset.
+        Je suis un développeur frontend avec une passion pour la création de sites web réactifs et fonctionnels. J&apos;ai de l&apos;expérience dans la création de
+        sites et applications Web utilisant JavaScript, React, Typescript et
+        également Node.js, Express, MongoDB. J&apos;apprends vite et je suis ouvert à élargir mes compétences.
       </motion.p>
       <div className="mt-10 flex flex-wrap gap-10">
         {services.map((service, index) => (
