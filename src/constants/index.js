@@ -19,6 +19,7 @@ import {
   threejs,
   kaseikiumami,
   crazyburger,
+  carsearch,
   promptopia,
   copy,
   copied,
@@ -233,7 +234,30 @@ const projects = [
     tabIndex: 0,
     image: crazyburger,
     source_code_link: "https://github.com/stephanemalho/crazy-burger",
-    deployed_url: "https://crazy-burger-1kyyhlad1-stephanemalho.vercel.app/",
+    deployed_url: "https://crazy-burger-stephanemalho.vercel.app/",
+  },
+  {
+    name: "CarSearch",
+    description:
+      "Application de recherche de véhicules d'occasion. L'application permet de rechercher des véhicules par marque, modèle, année,carburant. Les données sont récupérées via une API REST.",
+    tags: [
+      {
+        name: "Typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Next13",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HeadlessUI",
+        color: "pink-text-gradient",
+      },
+    ],
+    tabIndex: 0,
+    image: carsearch,
+    source_code_link: "https://github.com/stephanemalho/car-search",
+    deployed_url: "https://car-search-j189rl6c0-stephanemalho.vercel.app/",
   },
   {
     name: "Promptopia",
@@ -284,3 +308,4 @@ const projects = [
 ];
 
 export { services, technologies, experiences, testimonials, projects, socialLinks };
+

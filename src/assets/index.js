@@ -26,6 +26,7 @@ import openclassrooms from "./company/openclassrooms.png";
 
 import kaseikiumami from "./kaseikiumami.png";
 import crazyburger from "./crazyburger.png";
+import carsearch from "./carsearch.png";
 import promptopia from "./promptopia.png";
 
 import copy from "./copy/copy.svg";
@@ -60,6 +61,7 @@ export {
   openclassrooms,
   kaseikiumami,
   crazyburger,
+  carsearch,
   promptopia,
   copy,
   copied,
