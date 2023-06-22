@@ -257,7 +257,7 @@ const projects = [
     tabIndex: 0,
     image: carsearch,
     source_code_link: "https://github.com/stephanemalho/car-search",
-    deployed_url: "https://car-search-j189rl6c0-stephanemalho.vercel.app/",
+    deployed_url: "https://car-search-stephanemalho.vercel.app/",
   },
   {
     name: "Promptopia",
