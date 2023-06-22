@@ -220,7 +220,7 @@ const projects = [
   {
     name: "Crazee Burger",
     description:
-      "Application de restauration rapide en ligne, permettant de commander et de se faire livrer des produits. Le mode administrateur permet de gérer les commandes et les produits dynamiquement.",
+      "Application de restauration rapide, permettant d'enregister les commandes clients, en sélectionnant des produits. Le mode administrateur permet de gérer les commandes et les produits dynamiquement.",
     tags: [
       {
         name: "react",
@@ -239,7 +239,7 @@ const projects = [
   {
     name: "CarSearch",
     description:
-      "Application de recherche de véhicules d'occasion. L'application permet de rechercher des véhicules par marque, modèle, année,carburant. Les données sont récupérées via une API REST.",
+      "Application de recherche de véhicules d'occasion. L'application permet de rechercher des véhicules par marque, modèle, année, carburant. Les données sont récupérées via une API REST.",
     tags: [
       {
         name: "Typescript",
@@ -285,7 +285,7 @@ const projects = [
   {
     name: "Kaseiki Umami",
     description:
-      "une intégration captivante d'une page web statique et responsive pour un restaurant de sushi à la thématique japonaise. L'ajout d'animations AOS procure une expérience visuelle immersive.",
+      "Une intégration captivante d'une page web statique et responsive pour un restaurant de sushi à la thématique japonaise. L'ajout d'animations AOS procure une expérience visuelle immersive.",
     tags: [
       {
         name: "html",
