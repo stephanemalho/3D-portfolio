@@ -21,7 +21,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import devpoint from "./company/devpoint.png";
-import crazyburgerImg from "./company/crazyburger.png";
+import freelance from "./company/freelance.png";
 import valleesud from "./company/valleesud.png"
 
 import kaseikiumami from "./kaseikiumami.png";
@@ -57,7 +57,7 @@ export {
   typescript,
   threejs,
   devpoint,
-  crazyburgerImg,
+  freelance,
   valleesud,
   kaseikiumami,
   crazyburger,

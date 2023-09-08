@@ -13,7 +13,7 @@ import {
   mongodb,
   git,
   figma,
-  crazyburgerImg,
+  freelance,
   devpoint,
   threejs,
   kaseikiumami,
@@ -154,7 +154,7 @@ const experiences = [
   {
     title: "Développeur React.js",
     company_name: "Speed Order",
-    icon: crazyburgerImg,
+    icon: freelance,
     iconBg: "#383E56",
     date: "nov 2021 - dec 2022",
     tabIndex: 0,
