@@ -14,7 +14,6 @@ import {
   git,
   figma,
   crazyburgerImg,
-  openclassrooms,
   devpoint,
   threejs,
   kaseikiumami,
@@ -23,6 +22,7 @@ import {
   promptopia,
   copy,
   copied,
+  valleesud,
 } from "../assets";
 
 export const navLinks = [
@@ -140,11 +140,23 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Developpeur React.js",
-    company_name: "Crazee Burger",
+    title: "Développeur ReactJS",
+    company_name: "DevPoint",
+    icon: devpoint,
+    iconBg: "#E6DEDD",
+    date: "jan 2023 - juillet 2023",
+    tabIndex: 0,
+    points: [
+      "Développement des features de présentation",
+      "Création et mise en place d’un design système",
+    ],
+  },
+  {
+    title: "Développeur React.js",
+    company_name: "Speed Order",
     icon: crazyburgerImg,
     iconBg: "#383E56",
-    date: "Sept 2022 - Aujourd'hui",
+    date: "nov 2021 - dec 2022",
     tabIndex: 0,
     points: [
       "Développement de nouvelles feature avec un focus sur l’UX",
@@ -155,47 +167,28 @@ const experiences = [
     ],
   },
   {
-    title: "Developpeur Frontend",
-    company_name: "DevPoint",
-    icon: devpoint,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Avril 2023",
-    tabIndex: 0,
-    points: [
-      "Développement des features de présentation",
-      "Création et mise en place d’un design système",
-    ],
-  },
-  {
-    title: "Developpeur Web",
-    company_name: "Openclassrooms",
-    icon: openclassrooms,
+    title: "Développeur Frontend",
+    company_name: "Vallée sud drive",
+    icon: valleesud,
     iconBg: "#383E56",
-    date: "Jan 2020 - Oct 2022",
+    date: "fev 2018 - mars 2020",
     tabIndex: 0,
     points: [
       "Création d’une base de donnée MongoDB exposée selon un protocole d’api REST.",
       "Contrôle d’identification, Cryptage des données sensible.",
-      "Présentation démo devant un jury avec succès (obtention du diplôme)",
       "Stack technique : React, Redux, Axios, Express, API REST, MongoDB, Git, ",
-      "P7: développer une application React avec MongoDB",
-      "P6: Mise en place d’une API REST sécurisé",
-      "P5: Construire un site e-commerce en javascript",
-      "P4: Optimiser une page web existante (SEO - accessibilité)",
-      "P3: Dynamiser une page web avec des animations CSS",
-      "P2: Transformer une maquette en site web avec HTML et CSS",
-      "P1: Prendre en main la formation Web",
+      "développement de l'application React avec MongoDB",
     ],
-  },
+  }
 ];
 
 const testimonials = [
   {
     testimonial:
       "Collaborer avec Stéphane est un réel plaisir. Non seulement il est un développeur React talentueux, mais il crée une ambiance agréable de travail. Son approche collaborative et son esprit d'équipe sont inestimables.",
-    name: "Victor",
-    designation: "Chef de projet",
-    company: "Crazee Burger",
+    name: "Patrick",
+    designation: "lead dev",
+    company: "speed order",
     image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
@@ -210,7 +203,7 @@ const testimonials = [
     testimonial:
       "Stéphane est non seulement un développeur React talentueux, mais aussi une personne agréable avec qui travailler. Son approche collaborative et son esprit d'équipe sont vraiment appréciables.",
     name: "Loïs",
-    designation: "Collègue",
+    designation: "Étudiante",
     company: "Openclassrooms",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },

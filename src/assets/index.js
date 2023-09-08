@@ -22,7 +22,7 @@ import threejs from "./tech/threejs.svg";
 
 import devpoint from "./company/devpoint.png";
 import crazyburgerImg from "./company/crazyburger.png";
-import openclassrooms from "./company/openclassrooms.png";
+import valleesud from "./company/valleesud.png"
 
 import kaseikiumami from "./kaseikiumami.png";
 import crazyburger from "./crazyburger.png";
@@ -58,7 +58,7 @@ export {
   threejs,
   devpoint,
   crazyburgerImg,
-  openclassrooms,
+  valleesud,
   kaseikiumami,
   crazyburger,
   carsearch,
