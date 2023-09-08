@@ -7,10 +7,10 @@ import { SectionWrapper } from "../../hoc";
 import { fadeIn, textVariant } from "../../utils/motion";
 import Projects from "./Projects";
 
-const Works = ({key}) => {
+const Works = ({ key }) => {
   return (
     <>
-      <motion.div variants={textVariant()} id="projects@">
+      <motion.div variants={textVariant()} id="projects">
         <p className={styles.sectionSubText}>Mes travaux</p>
         <h2 className={styles.sectionHeadText}>Projets.</h2>
       </motion.div>
@@ -19,7 +19,12 @@ const Works = ({key}) => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Les projets suivants mettent en valeur mes compétences et mon expérience à travers des exemples concrets de mon travail. Chaque projet est brièvement décrit avec des liens vers des référentiels de code et des démonstrations en direct. Cela reflète ma capacité à résoudre des problèmes complexes, à travailler avec différentes technologies et à gérer efficacement des projets.
+          Les projets suivants mettent en valeur mes compétences et mon
+          expérience à travers des exemples concrets de mon travail. Chaque
+          projet est brièvement décrit avec des liens vers des référentiels de
+          code et des démonstrations en direct. Cela reflète ma capacité à
+          résoudre des problèmes complexes, à travailler avec différentes
+          technologies et à gérer efficacement des projets.
         </motion.p>
       </div>
       <Projects key={key} />
