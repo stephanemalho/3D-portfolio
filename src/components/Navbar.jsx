@@ -63,7 +63,7 @@ const Navbar = () => {
             }}
             tabIndex={0}
           >
-            Stéphane&nbsp;<span className="sm:block hidden">&nbsp;Malho</span>
+            Documents&nbsp;<span className="sm:block hidden">&nbsp;Steph</span>
           </p>
           <div
             className={`${
